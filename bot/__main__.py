@@ -90,7 +90,7 @@ async def start(ctx):
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(ctx):
         start_string = f"""
-This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.
+This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to Swtich.
 Type /{BotCommands.HelpCommand} to get a list of available commands
 """
         await sendMessage(ctx.event.message, start_string, reply_markup)
